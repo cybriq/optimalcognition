@@ -4,7 +4,7 @@ A scratchpad for some notes about how to discover one's ideal type of work
 
 ## Case Study 1: Loki Verloren (the author!)
 
-## 1. Lego
+## Lego
 
 In my play with my first toy, and my passion for the toy:
 
@@ -16,7 +16,7 @@ I wasn't really interested in representational things either, I enjoyed the geom
 
 I did not fall in love with anything I made, it would usually be torn apart before I would even bother to show it to anyone, and showing it to people was not a major motivation.
 
-## 2. Computer Programming
+## Computer Programming
 
 ### My initial work with programming was on a TRS-80 Color Computer, circa 1984
 
@@ -136,10 +136,20 @@ With this three piece pattern, controller, miner, and worker, a chain of process
 
 I eventually settled on using multicast, because there is a huge amount of overhead involved in connection management, that I had seen in great detail in the peer to peer libraries that btcd, the big list of peers, and the connection monitoring, and everything like this, could be avoided by using multicast, effectively making the network into a hub. At first, delivery of solutions was point to point, but even that turned out to be simpler to use multicast, and gave an extra bonus that it became another way for miners to recognise that working was pointless, as a valid solution block is quick to check. I'm not sure if I kept it that way, there was some experimenting.
 
-The 
+The biggest problems I had in all of this were the vast differences between Windows process model, and Linux, and then the divergence between Linux/Android, MacOS, and Windows. It all eventually was made to work, on all platforms, identically, and heteregenous platforms could be used to run a cluster, I had the idea, that since the proof of work reduced the advantage of any of the platforms (including the hypothetical GPU implementation), that mining farms could reuse old mobile phone devices. 
+
+Well, until I found out that such applications were prohibited to be on either Android or Mac walled gardens. They still could be installed, but this release avenue was shut.
+
+Because it used multicast, essentially one could then create redundancy with multiple nodes in a network, transparently, and miners would pick and stick to the first one they heard, until it went offline, and then automatically pick up the other controller's jobs within seconds, avoiding downtime.
+
+It was a core goal of the mining protocol to be as fast as possible, as the key to proof of work mining is purely about racking up attempt counts. The more times a new option was tried, the greater the chance of finding a solution, so the less time a cluster spent not working, and conversely, from the times when the network knew there was no solution, to delivering the new job in parallel to propagating the solution, to give the solver an edge at the time of the solution, to grab the next one.
 
 ## Conclusions from Case Study of Loki
 
+Summing up Loki's attitude towards programming tasks, and what things he values, in descending order:
 
+1. Safety is of utmost importance, no software should be left with any obvious shortcuts or tech debts, and no release should be allowed to have such things.
+2. Efficiency of processing is the second important thing, the system should never do any work that doesn't need to be done.
+3. 
 
 
