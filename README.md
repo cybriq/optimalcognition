@@ -84,4 +84,15 @@ I was not in danger, because of my alertness. My sister, however, was more awkwa
 
 Once I had the framework for hard fork in place, I divided things up that were relevant to it, putting the various functions that goverened the difficulty adjustment, and made a second file that had the new versions.
 
-Next, I had to implement the transition process. 
+Next, I had to implement the transition process and the additional features.
+
+I don't remember exactly what order I did this in, as all of this part of the work was interdependent. This part of the system changed a lot, and though it was working as a whole thing, including a basic GUI wallet written in Gio, the lack of any kind of competent project manager in the team (or operations or treasurer) the project dragged on a lot longer, as I was learning to be project manager, architect, mentor, lead developer and manager (managing myself and my motivation) all in parallel during the total 2.5 years this all dragged out for.
+
+I created a hash function that depended on cutting and rearranging and reversing bytes of the block's data, then performing a multiplication then division pattern that was designed to result in a growth in the size of the number, until it generated a 5-20kb long sequence of bytes, which then is finished off with a Blake3 hash. 
+
+I am sure that this was an effective bottleneck that has a much narrower possibility for optimization than standard simple hash functions which generally function mainly by shuffling operations and bitwise logical operations. Long division is fastest in 64 bit cpus, and half as fast in GPUs and embedded processors like ARM64, that have 32 bits, and the reason being, that the amount of a chip dedicated to this computation is the largest single function on any CPU, and thus, only as fast as it needs to be for the median application, which this is an extreme application.
+
+I extended the dual chain pattern to a 9 way pattern, experimented with using different finalising hashes at first, and then just using the same hash for each one but each different parallel schedule had a different time target, and different version number.
+
+I then experimented with how to create an interdependency between the blocks so they would average a specific block time, and almost reinvented the concept of using the integral as found in the PID controller, used to get precise dynamic adjustment control in physics and quality adaptive control systems like antilock brakes, ballistic missile evasion control systems, and the like.
+
