@@ -60,6 +60,16 @@ I knew I would do it well, and I knew I would do it better than my father. My fa
 
 Of course, this experience left a big imprint on me, as I was playing some sort of game involving rocking back and forth like a see-saw ... and she fell back and... yeah, I felt so bad, but it wasn't really my fault. Whenever I see buildings unfinished but being lived in (very common in the balkans) I see something that disturbs me, and something that I would never allow in my own work. Safety first, before usage. Never let children in a space that adults would even injure themselves in. Sharp edges, nails sticking out, junk on the floor. All of these are traps that can literally kill.
 
+### Art
+
+In much the same vein, my efforts to produce art, both music and visual forms, painting, drawing, and so on, always were about the details, and then building a structure up from them in an ad-hoc manner, creating a style of art that was completely dense and formed of hundreds of repeating patterns elaborated into different ways and scales. Representations were very difficult, beyond mastering the human form.
+
+With music, the same... I was more interested in elements, like the combinations of progressions made of overlapping waveforms, and always struggled with the development from thesis to conclusion, never knowing when to stop, and struggling with all elements of the music that had to do with the narrative of the music.
+
+With fiction, I did not have the patience to develop characters, and generally ran out of steam after I write some stream of consciousness that quickly leads to a conclusion, and has no overarching narrative structure. 
+
+Of course, in all of these, training in this structuring work would have helped, but it highlights the fact that this structuring cognition is a weakness that should not be depended upon. And that this was a critical area to devote a sufficient amount of time to ensure it did not interfere with the team's work process.
+
 ### Blockchain Programming
 
 The first thing I did that I consider to have been important was replicating the different consensus. I had the C++ code to work from, and had to alter the parts of the mining protocol that generated the difficulty change, and adding the scrypt hash, and then set up the original node so it only connected to the legacy old node to take the blocks, and then correctly validate and accept the blocks.
