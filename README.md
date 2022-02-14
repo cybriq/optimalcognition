@@ -4,11 +4,11 @@ A scratchpad for some notes about how to discover one's ideal type of work
 
 ## Case Study 1: Loki Verloren (the author!)
 
-1. Lego
+## 1. Lego
 
 In my play with my first toy, and my passion for the toy:
 
-I first showed that I enjoy playing with permutations, taking a set of pieces and finding new ways to arrange them.
+I started by simply following the instructions to learn how to piece together the object the package showed completed. It was a lot more fun to me than a jigsaw puzzle because it was tactile and modular, but I wanted to see the physical thing, that the picture promised. This is a pattern I can point to in almost every other aspect of my life, I start by watching, then I poke, then I start to take it into pieces, and then I try to build a whole system.
 
 I never made big constructions, even when my collection got quite large. I tended towards small things, and playing with how to structure them most efficiently.
 
@@ -16,9 +16,9 @@ I wasn't really interested in representational things either, I enjoyed the geom
 
 I did not fall in love with anything I made, it would usually be torn apart before I would even bother to show it to anyone, and showing it to people was not a major motivation.
 
-2. Computer Programming
+## 2. Computer Programming
 
-### My initial work with programming was on a TRS-80 Color Computer. 
+### My initial work with programming was on a TRS-80 Color Computer, circa 1984
 
 Firstly, I got in lots of trouble modifying the code my father had spent many hours inputting from programming magazines. I was more interested in seeing how the system went from the details and to the result.
 
@@ -42,3 +42,28 @@ Second thing I did was text shaping, I think, though it may have been window fra
 
 To be honest, I don't remember exactly, because windows were much bigger arrays of pixels to mask out, I think possibly I did text first. I can't remember so much details of what I did with this part, as I didn't finish it past some point of having a title bar and frame, and I didn't get to widgets.
 
+In actual fact, this was the best programming I did until 2018. I believe this was because my father attacked me with psychological torment that associated confusion with the activity, in order to stop me 'getting in his way'.
+
+### Carpentry
+
+He did the same thing to me with carpentry too. In fact, Carpentry was probably the first activity I got the passion to engage in as a child. I was never able to do anything, because he never made the effort to teach me, and when I seized the opportunity to play with them, I got in huge trouble. 
+
+An experience in 2004 in New Zealand proved that despite this, I had a talent for building as well. I started from nothing, first mastering how to cut square ends, then how to join them side by side with the correct stud width (600mm), and I aimed to use as little wood as possible, reusing offcuts as corners and braces.
+
+An idiot, interfering twit housemate forced upon the project the idea of putting a structural floor at the base of it. This basically destroyed the utility of the space by making it so low I could almost bump my head if I stretched up on my tippy toes. 
+
+In spite of this, I still did the rest. The frames all were up, and next, I placed all the fibre cement cladding on the outside, figuring the less time the frame is exposed, the better. I carefully predrilled the fixing points to minimise the amount of shock while I put the nails in that held them in place. Then I placed the window and door frames.
+
+What I wanted to do for the floor was minimalistic. It had a sloped concrete track under it for car tyres, I wanted to just form a level box around the structure and make it flat and raise the higher part minimally and to provide a flat floor that would have had another 6 inches of height, and made the whole thing practical as a living space rather than an awkward storeroom.
+
+I knew I would do it well, and I knew I would do it better than my father. My father was always leaving things not properly finished, to the point, that one time it resulted in my sister ending up with a massive gash in her back as we played near some half-arsed shelving made with cinderblocks and wire reinforced glass panels ... right next to our beds... 
+
+Of course, this experience left a big imprint on me, as I was playing some sort of game involving rocking back and forth ... and she fell back and... yeah, I felt so bad, but it wasn't really my fault. Whenever I see buildings unfinished but being lived in (very common in the balkans) I see something that disturbs me, and something that I would never allow in my own work. Safety first, before usage.
+
+### Blockchain Programming
+
+The first thing I did that I consider to have been important was replicating the different consensus. I had the C++ code to work from, and had to alter the parts of the mining protocol that generated the difficulty change, and adding the scrypt hash, and then set up the original node so it only connected to the legacy old node to take the blocks, and then correctly validate and accept the blocks.
+
+I can't remember exactly how long it all took me, maybe 2 weeks, maybe a month. In parallel to this, I was studying every bit of the language syntax and grammar that I was modifying so I could understand how to rewrite it. I am not completely sure exactly what I had done before this. I was really quite still a beginner, I was not composing any new code, just altering existing code to match the Parallelcoin consensus.
+
+In this step you can see the same process
