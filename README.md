@@ -146,14 +146,22 @@ It was a core goal of the mining protocol to be as fast as possible, as the key 
 
 ### The Monitor
 
+This did not end up going very far, but made use of the child process code used in the miner to create a testing environment for monitoring logs and filtering them by subsystem to improve the experience compared to the less flexible use of TTY consoles as logging, where colors and patterns became difficult to make different enough to notice errors appearing in the form of incorrect outputs.
+
+This part of the project downloads and installs a Go development environment, closes the repository, and allows the developer to edit the code, and rapidly restart it.
+
 ## Conclusions from Case Study of Loki
 
-Summing up Loki's attitude towards programming tasks, and what things he values, in descending order:
+Firstly, it is best to use Loki's creativity in a more research oriented role, where there is not a deadline, but where safety and efficiency are the most important feautures of the end product. Loki believes that safety and efficiency cannot be compromised on, period, and will endlessly berate anyone who takes shortcuts, to the point of disrupting the team by his stubborness.
 
-1. Safety is of utmost importance, no software should be left with any obvious shortcuts or tech debts, and no release should be allowed to have such things.
-2. Efficiency of processing is the second important thing, the system should never do any work that doesn't need to be done.
-3. Modularity, the decomposition of units of the system to their smallest possible size, and utilising simple, uniform interconnection, avoiding repeated code. Some use this to justify Generics, but the proper way to implement generic types is to use raw bytes, universal format, and the language should have a type coercion system, and a predictable, and stable encoding format so it is just a small step to bridge between the abstract and concrete parts of a generic algorithm.
-4. Readability is critical, the text should resemble poetry, and give you clues about the code just by the geometry of the code, the indentations, and additionally augmented by code coloring so that one can scan a source code quickly and home in on an area that you want to read or modify. This reduces the amount of time required to get familiar with a codebase. This is why Go has gofmt, and why I developed the DSL for Gio so I could implement complete GUI's myself.
-5. 
+Secondly, Loki learns best by doing, and for this reason, the simplicity of Go was a key ingredient in making progress. The more complicated the language, the more likely he is to make choices on how to do something from the first thing that presents, and miss the better solution. So a language that aims to make only one way to do something is better than an "expressive" language like C++ or Rust. 
+
+Thirdly, Loki always thinks of who is going to inherit the code, and thus always aims to make the code adequately annotated, but also quite self evident and readable at the same time. Thus, he can start documentation, but it will end up excessively exhaustive if he is left to the whole task. It is probably even better for documentation writing to be done by consultation and a more top down thinker who can easily start from rubrics and elaborate optimally takes the task of adjunct documentation beyond the bullet point level.
+
+Fourthly, derived from the two preceding, this focus on simplicity and responsibility means he can and is enthusiastic towards sharing the refined designs makes him good for both working with tooling and designing work protocols, as well as teaching them, as the teaching process often exposes further flaws and ambiguities that ensure the goals of safety and maintainability are achieved.
+
+Fifth, the deep understanding and ability to model complex, interacting individual parts as found in distributed and concurrent systems, also means that he can in fact manage the work process of groups of other programmers, once he becomes familiar with each individual's style of cognition, and assign them to the elements that fit them best. For sure, in the beginning, his management and delegation processes should be monitored until he is familiar with both the organisational demands and the time to acquire the necessary information about who is best at doing what.
 
 
+
+Lastly, 
