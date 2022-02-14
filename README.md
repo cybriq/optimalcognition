@@ -96,5 +96,39 @@ I extended the dual chain pattern to a 9 way pattern, experimented with using di
 
 I then experimented with how to create an interdependency between the blocks so they would average a specific block time, and almost reinvented the concept of using the integral as found in the PID controller, used to get precise dynamic adjustment control in physics and quality adaptive control systems like antilock brakes, ballistic missile evasion control systems, and the like.
 
-In my next role, with Energi, my manager, who was awesome, btw, Ryan Lucchese, probably due to my way of talking about my prior experience working with developing a stable proof of work consensus, realised that PID controllers are exactly what the task required, and built the functions that were required. What I did not like about how he did it, though, which was a big mistake on his part, was taking that job away from me. Probably, because he didn't realise that I don't have a bachelor of science in physics, but I can visualise physics formulae with my imagination and thus from there describe them into code. It would have taken no more than twice the time he took to do it, and he had years of studying the PID controller compared to my zero minutes.
+In my next role, with Energi, my manager, who was awesome, btw, Ryan Lucchese, probably due to my way of talking about my prior experience working with developing a stable proof of work consensus, realised that PID controllers are exactly what the task required, and built the functions that were required. 
+
+What I did not like about how he did it, though, which was a big mistake on his part, was taking that job away from me. Probably, because he didn't realise that I don't have a bachelor of science in physics, but I can visualise physics formulae with my imagination and thus from there describe them into code. It would have taken no more than twice the time he took to do it, and he had years of studying the PID controller compared to my zero minutes. 
+
+I had no problem understanding how to do the mathematics, and it was me who insisted, that in order to make the consensus as robust as possible, the calculations should be done on fixed precision rather than floating point, which required writing them, which was what I did first, and I butted heads against everyone in the team about this subject, until Ryan finally acknowledged that I was right.
+
+Back to the Parallelcoin, the next few parts that I did with it, once I had a working replacement consensus for the hard fork, and a tested transition, there was several matters to attend to:
+
+### 1. GUI
+
+This was a very long drawn out process of argument and counterargument, and was made a lot less productive by this indecision. I knew what way I wanted to implement the GUI, and quickly found the nearest thing to what I wanted in a library called Nucular. 
+
+Eventually we settled on something very similar, that in fact now uses Gio, the choice we settled on, and the "ruler from the shadows" of the project then proceeded to take his extensive experience building web interfaces using HTML and javascript tooling, which he started with first, as many projects have chosen, due to the universal availability of webviews in most operating systems, such as the one used in Safari, that was forked to become the one in Chrome, and now is everywhere, even microsoft gave up trying to continue the long legacy of Mosaic, and Netscrape won. Yes, a lot of people don't realise that. The browser wars ended only a couple of years ago when Microsoft gave up trying to make their own, "better" engine.
+
+I had nothing to do with this particular part of the project until out of months of humming and harring and scratching things out, he settled on Gio. 
+
+Of course, his Python-derived methods of structuring the code were completely non-idiomatic for Go, and were very hard to debug. 
+
+His style of building it was wrong for Go, and wrong for an immediate mode process, and he eventually created some really insoluble bugs with his ad hoc way of piecing it together.
+
+He was following the examples of the author of Gio, which were extremely hard to read, and thus grew unbearably complex very quickly, at which point I started what is now in various places and versions, a Domain Specific Language form, which I based on method chaining with objects returning themselves so they could be passed through, and then finding a way to embed them more easily within each other, while minimising the depth of indentation required so a whole interface didn't have to be cut into twenty pieces.
+
+The thing that made me eventually push hard enough that we were able to reach consensus on the use of Gio, was the point that it could be easily made to run on all platforms, Windows, Mac, Linux, Android and iOS.
+
+But unfortunately, the library lacked a proper DSL, and I got quite waylaid building that DSL, and frustrated with trying to communicate this severe deficiency in the library, that as far as I know, even now lacks a proper scrolling panel.
+
+I made a rudimentary scrollbar, additional to the sectioned box shortcut version that avoided rendering invisible parts of a viewport, that could not yield a proper indicator and widget set to make your *normal* scrollbars as found on all viewport implementations.
+
+I found that there was a way to separate the size calculation from the rendering, which (is still, I think) interleaved in the processing at the deepest level of the library. 
+
+## Conclusions from Case Study of Loki
+
+
+
+### 3. Creating a miner 
 
