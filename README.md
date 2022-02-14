@@ -104,7 +104,7 @@ I had no problem understanding how to do the mathematics, and it was me who insi
 
 Back to the Parallelcoin, the next few parts that I did with it, once I had a working replacement consensus for the hard fork, and a tested transition, there was several matters to attend to:
 
-### 1. GUI
+### GUI
 
 This was a very long drawn out process of argument and counterargument, and was made a lot less productive by this indecision. I knew what way I wanted to implement the GUI, and quickly found the nearest thing to what I wanted in a library called Nucular. 
 
@@ -126,7 +126,7 @@ I made a rudimentary scrollbar, additional to the sectioned box shortcut version
 
 I found that there was a way to separate the size calculation from the rendering, which (is still, I think) interleaved in the processing at the deepest level of the library. 
 
-### 3. Creating a miner 
+### Creating a miner 
 
 I first just took the inbuilt "toy" testnet miner from btcd, and then isolated it inside a separate binary, and created a stdio based IPC pipe to connect it to the node, so it was separated.
 
@@ -144,12 +144,16 @@ Because it used multicast, essentially one could then create redundancy with mul
 
 It was a core goal of the mining protocol to be as fast as possible, as the key to proof of work mining is purely about racking up attempt counts. The more times a new option was tried, the greater the chance of finding a solution, so the less time a cluster spent not working, and conversely, from the times when the network knew there was no solution, to delivering the new job in parallel to propagating the solution, to give the solver an edge at the time of the solution, to grab the next one.
 
+### The Monitor
+
 ## Conclusions from Case Study of Loki
 
 Summing up Loki's attitude towards programming tasks, and what things he values, in descending order:
 
 1. Safety is of utmost importance, no software should be left with any obvious shortcuts or tech debts, and no release should be allowed to have such things.
 2. Efficiency of processing is the second important thing, the system should never do any work that doesn't need to be done.
-3. 
+3. Modularity, the decomposition of units of the system to their smallest possible size, and utilising simple, uniform interconnection, avoiding repeated code. Some use this to justify Generics, but the proper way to implement generic types is to use raw bytes, universal format, and the language should have a type coercion system, and a predictable, and stable encoding format so it is just a small step to bridge between the abstract and concrete parts of a generic algorithm.
+4. Readability is critical, the text should resemble poetry, and give you clues about the code just by the geometry of the code, the indentations, and additionally augmented by code coloring so that one can scan a source code quickly and home in on an area that you want to read or modify. This reduces the amount of time required to get familiar with a codebase. This is why Go has gofmt, and why I developed the DSL for Gio so I could implement complete GUI's myself.
+5. 
 
 
