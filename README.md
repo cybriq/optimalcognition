@@ -66,4 +66,14 @@ The first thing I did that I consider to have been important was replicating the
 
 I can't remember exactly how long it all took me, maybe 2 weeks, maybe a month. In parallel to this, I was studying every bit of the language syntax and grammar that I was modifying so I could understand how to rewrite it. I am not completely sure exactly what I had done before this. I was really quite still a beginner, I was not composing any new code, just altering existing code to match the Parallelcoin consensus.
 
-In this step you can see the same process
+In this step you can see the same process repeating, first I start with an existing system, then tweak it, and then start to add new parts.
+
+Prior to this, I never got past the initial stage of a rough specification of the application, and I would just start trying to build it from the ground up.
+
+This is of course impossible to succeed at without first being fluent in the language and the algorithms.
+
+Next, I started to think about how to make a hard fork, I took the existing definitions of the various details that defined the legacy version, that I now had successfully replicated, and added a scheme to track multiple versions, even though I was only making one new one.
+
+This is a repeat of this pattern of 'finish it before using it' and the modularity from Lego that was very important to me. If I didn't make it easy to extend, I was committing a crime against whoever followed me. This is called Tech Debt, and I am extremely obsessive about not leaving it for others. 
+
+
