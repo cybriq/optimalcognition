@@ -22,7 +22,7 @@ I did not fall in love with anything I made, it would usually be torn apart befo
 
 Firstly, I got in lots of trouble modifying the code my father had spent many hours inputting from programming magazines. I was more interested in seeing how the system went from the details and to the result.
 
-When I actually got to doing something by myself, it was after I first saw a Macintosh computer. My very first piece of code combined multi dimensional arrays and boolean logic, making a sprite.
+When I actually got to doing something by myself, it was after I first saw a Macintosh computer. My very first piece of code combined multi dimensional arrays and boolean logic, and polling to making a mouse pointer.
 
 I first figured out how to paint the pointer.
 
@@ -46,7 +46,7 @@ In actual fact, this was the best programming I did until 2018. I believe this w
 
 ### Carpentry
 
-He did the same thing to me with carpentry too. In fact, Carpentry was probably the first activity I got the passion to engage in as a child. I was never able to do anything, because he never made the effort to teach me, and when I seized the opportunity to play with them, I got in huge trouble. 
+My father did the same thing to me with carpentry too. In fact, Carpentry was probably the first activity I got the passion to engage in as a child. I was never able to do anything, because he never made the effort to teach me, and when I seized the opportunity to play with them, I got in huge trouble. 
 
 An experience in 2004 in New Zealand proved that despite this, I had a talent for building as well. I started from nothing, first mastering how to cut square ends, then how to join them side by side with the correct stud width (600mm), and I aimed to use as little wood as possible, reusing offcuts as corners and braces.
 
