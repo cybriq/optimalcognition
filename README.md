@@ -126,9 +126,20 @@ I made a rudimentary scrollbar, additional to the sectioned box shortcut version
 
 I found that there was a way to separate the size calculation from the rendering, which (is still, I think) interleaved in the processing at the deepest level of the library. 
 
+### 3. Creating a miner 
+
+I first just took the inbuilt "toy" testnet miner from btcd, and then isolated it inside a separate binary, and created a stdio based IPC pipe to connect it to the node, so it was separated.
+
+Then, I split the miner into a controller, which handled the delivery of the work, and the worker, and then split the worker, because I suspected that the Go concurrency system was not maximising the parallelism the same way as the preemptive kernel scheduler would.
+
+With this three piece pattern, controller, miner, and worker, a chain of processes spawning child processes, I then had something that just needed a network protocol to deliver the work across a network instead of forcing the user to have a full node for every miner, which was obviously a huge waste of computing resources.
+
+I eventually settled on using multicast, because there is a huge amount of overhead involved in connection management, that I had seen in great detail in the peer to peer libraries that btcd, the big list of peers, and the connection monitoring, and everything like this, could be avoided by using multicast, effectively making the network into a hub. At first, delivery of solutions was point to point, but even that turned out to be simpler to use multicast, and gave an extra bonus that it became another way for miners to recognise that working was pointless, as a valid solution block is quick to check. I'm not sure if I kept it that way, there was some experimenting.
+
+The 
+
 ## Conclusions from Case Study of Loki
 
 
 
-### 3. Creating a miner 
 
