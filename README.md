@@ -58,7 +58,7 @@ What I wanted to do for the floor was minimalistic. It had a sloped concrete tra
 
 I knew I would do it well, and I knew I would do it better than my father. My father was always leaving things not properly finished, to the point, that one time it resulted in my sister ending up with a massive gash in her back as we played near some half-arsed shelving made with cinderblocks and wire reinforced glass panels ... right next to our beds... 
 
-Of course, this experience left a big imprint on me, as I was playing some sort of game involving rocking back and forth ... and she fell back and... yeah, I felt so bad, but it wasn't really my fault. Whenever I see buildings unfinished but being lived in (very common in the balkans) I see something that disturbs me, and something that I would never allow in my own work. Safety first, before usage.
+Of course, this experience left a big imprint on me, as I was playing some sort of game involving rocking back and forth like a see-saw ... and she fell back and... yeah, I felt so bad, but it wasn't really my fault. Whenever I see buildings unfinished but being lived in (very common in the balkans) I see something that disturbs me, and something that I would never allow in my own work. Safety first, before usage. Never let children in a space that adults would even injure themselves in. Sharp edges, nails sticking out, junk on the floor. All of these are traps that can literally kill.
 
 ### Blockchain Programming
 
@@ -74,6 +74,14 @@ This is of course impossible to succeed at without first being fluent in the lan
 
 Next, I started to think about how to make a hard fork, I took the existing definitions of the various details that defined the legacy version, that I now had successfully replicated, and added a scheme to track multiple versions, even though I was only making one new one.
 
-This is a repeat of this pattern of 'finish it before using it' and the modularity from Lego that was very important to me. If I didn't make it easy to extend, I was committing a crime against whoever followed me. This is called Tech Debt, and I am extremely obsessive about not leaving it for others. 
+This is a repeat of this pattern of 'finish it before using it' and the modularity from Lego that was very important to me. If I didn't make it easy to extend, I was committing a crime against whoever followed me. This is called Tech Debt, and I am extremely obsessive about not leaving it for others.
 
+The fact that this same thing in construction work led to a severe injury to my sister, that I was witness to the horror of, I consider it to be a fact that every bit of tech debt, and shortcut used in code, can some day literally kill someone, or at least lose them a huge amount of money, as is more likely with blockchain systems.
 
+I see no functional difference between injury and death, or to steal life, whether all at once, or piece by piece, both are crimes, and I knew from observing my father that his incremental damage was more insidious for being hard to observe, and as I have high intelligence, sharp senses, and a strong sense of order, that many other political and philosophical positions are clearly death traps like a half built house with 3 year old children playing in it.
+
+I was not in danger, because of my alertness. My sister, however, was more awkward, more like her father, and I was like my mother, extremely dextrous, even in spite of my "cackky hands" - which is in fact due to the fact that I am right handed and target with my left eye, so I cannot swing a bat right handed, and cannot play hockey, I lost a nail playing hockey due to that, I don't know what the hell the teachers taking the class were thinking.
+
+Once I had the framework for hard fork in place, I divided things up that were relevant to it, putting the various functions that goverened the difficulty adjustment, and made a second file that had the new versions.
+
+Next, I had to implement the transition process. 
