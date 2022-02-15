@@ -10,6 +10,7 @@ A consensus is then mislabeled "Truth" by liars. It is a false assertion because
 
 ## Case Study 1: Loki Verloren (the author!)
 
+
 ## Lego
 
 In my play with my first toy, and my passion for the toy:
