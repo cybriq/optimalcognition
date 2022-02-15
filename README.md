@@ -108,7 +108,15 @@ I then experimented with how to create an interdependency between the blocks so 
 
 In my next role, with Energi, my manager, who was awesome, btw, Ryan Lucchese, probably due to my way of talking about my prior experience working with developing a stable proof of work consensus, realised that PID controllers are exactly what the task required, and built the functions that were required. 
 
+Yes, I just want to reiterate something, that is further reinforced later about my personality, and based on my experience of near fatal accidents caused by this, as well as my own miserable prior life to 10th December 2021: 
+
+If you are given the responsibility of leader, and you make a mistake, and a follower points it out, and they are correct, then you are leading the team into disaster. The simple visual representation of Integral and Derivative make this very clear. Integral gives you the area under the curve, and from this value, you get the momentary gradient at this point. The Derivative is simply the perpendicular in a 1 dimensional (up and down) adjustment, which neutrtalises the derivative, and would be used in a system where there is two dimensions and thus two ways the error can be incorrect. 
+
+I extensively tested various factors and dumped the charts into an archive of screenshots of the charts that the different P, I and D factors created, and it just added noise, almost the same as if the Proportional factor was raised or the Integral decreased... which of course it does in a 1 dimensional system (over, or under target). If there was over, and beside, then the first dimension integral would be denoised by the derivative of the second dimension.
+
 What I did not like about how he did it, though, which was a big mistake on his part, was taking that job away from me. Probably, because he didn't realise that I don't have a bachelor of science in physics, but I can visualise physics formulae with my imagination and thus from there describe them into code. It would have taken no more than twice the time he took to do it, and he had years of studying the PID controller compared to my zero minutes. 
+
+As in the previous paragraph of reflections after the fact, the uses of the derivative would have been very relevant in the vibration proof air cushion system he described in his discussion about it, as the air cushion has two dimensions to keep a level, vibration free surface, X, and Y, or forwards and lateral, as you look at the plane of the platform.
 
 I had no problem understanding how to do the mathematics, and it was me who insisted, that in order to make the consensus as robust as possible, the calculations should be done on fixed precision rather than floating point, which required writing them, which was what I did first, and I butted heads against everyone in the team about this subject, until Ryan finally acknowledged that I was right.
 
