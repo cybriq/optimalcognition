@@ -2,7 +2,14 @@
 
 A scratchpad for some notes about how to discover one's ideal type of work
 
-## Case Study 1: Loki Verloren (The First Colleague of Cybriq Systems!)
+The basis of one's ideal kind of work is the exact set of talents one was given by birth. These cannot be changed. Experience and learning can only compensate for it, either by mitigation or accentuation. 
+
+The facts are unimpeachable, and can always be confirmed by a third party and thus achieve a consensus.
+
+A consensus is then mislabeled "Truth" by liars. It is a false assertion because only an outside observer to the universe with all the facts, who can exhaust every path of investigation (ie, infinite time) can determine the nature of "truth".
+
+## Case Study 1: Loki Verloren (the author!)
+
 
 ## Lego
 
